@@ -17,16 +17,7 @@ class TransactionExport implements FromArray, WithHeadings, WithStrictNullCompar
   public function headings(): array
   {
     return [
-      'Order ID',
-        'TXN ID',
-        'TXN DateTime',
-        'Invoice ID',
-        
-        //'Currency',
-        'Amount',
-        'Card Type',
-        'Card Number',
-        'Approval Code'
+      
     ];
   }
 
