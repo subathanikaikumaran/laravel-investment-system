@@ -17,6 +17,7 @@ class CheckAdmin
     {
         $user = $request->user();
         
+        // to check that only allow admin to acccess
         if($user->is_admin==2){
             return redirect()->route('dashboard');
         }

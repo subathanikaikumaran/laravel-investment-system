@@ -16,6 +16,7 @@ class CheckCustomer
     public function handle($request, Closure $next)
     {
         $user = $request->user();
+        // to check that only allow custtomer to acccess
         
         if($user->is_admin==1){
             return redirect()->route('home');
